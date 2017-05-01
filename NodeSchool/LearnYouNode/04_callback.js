@@ -1,9 +1,12 @@
 
+/*
+In Node Application, 
+any async function accepts a callback as the last parameter and 
+a callback function accepts an error as the first parameter.
 
-https://github.com/maxogden/art-of-node#callbacks
+*/
 
 /*
-
 ==Callbacks==
 
 This is the most important topic to understand if you want to understand how to use node. 
@@ -13,12 +16,12 @@ They weren't invented by node, they are just part of the JavaScript language.
 *Callbacks are functions that are executed asynchronously, or at a later time.* 
 Instead of the code reading top to bottom procedurally, 
 *async programs may execute different functions at different times based on the order and speed that earlier functions like http requests or file system reads happen.
->>Callback是不同步的,同步意思是以往由上而下一步一步讀取程式碼,
->>而不同則是當你提出request的時候,它再回去執行上面的程式碼
+	>>Callback是不同步的,同步意思是以往由上而下一步一步讀取程式碼,
+	>>而不同則是當你提出request的時候,它再回去執行上面的程式碼
 
 The difference can be confusing since determining if a function is asynchronous or not depends a lot on context. Here is a simple synchronous example, meaning you can read the code top to bottom just like a book:
->>要搞清楚什麼是同步什麼是非同步其實有時讓人很混亂
->>以下是簡單的同步程式碼 */
+	>>要搞清楚什麼是同步什麼是非同步其實有時讓人很混亂
+	>>以下是簡單的同步程式碼 */
 
 	var myNumber = 1
 	function addOne() { myNumber++ } // define the function
@@ -27,13 +30,13 @@ The difference can be confusing since determining if a function is asynchronous 
 
 
 /*The code here defines a function and then on the next line calls that function, without waiting for anything. When the function is called it immediately adds 1 to the number, so we can expect that after we call the function the number should be 2. This is the expectation of synchronous code - it sequentially runs top to bottom.
->>這裡先定了一個function叫做addOne, 
->>第二行執行AddOne,幾乎不用等待任何事情,myNumber就會加1
->>我們可以知道myNumber會變成2
+	>>這裡先定了一個function叫做addOne, 
+	>>第二行執行AddOne,幾乎不用等待任何事情,myNumber就會加1
+	>>我們可以知道myNumber會變成2
 
 Node, however, uses mostly asynchronous code. Let's use node to read our number from a file called number.txt:
->>接下來是非同步的例子
->>我們用readfile去讀取number.txt
+	>>接下來是非同步的例子
+	>>我們用readfile去讀取number.txt
 */
 
 	var fs = require('fs') // require is a special function provided by node
