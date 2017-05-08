@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+
+</head>
+<body>   
+
+<h1>
+	<p id="demo">This is a paragraph</p>
+	name:<input onfocus="myFunc(1)" onblur="myFunc(2)"
+		onchange="myFunc(3)" onmouseover="myFunc(4)" ></input>
+	<script type="text/javascript">
+	function myFunc(x){
+		var str="";
+		switch (x)
+		{
+			case 1:
+				str="onFocus";
+				break;
+			case 2:
+				str="LoseFocus";
+				break;
+			case 3:
+				str="DataChanged";
+				break;
+			case 4:
+				str="MouseOver";
+				break;
+		}	 
+		document.getElementById('demo').innerHTML =str;
+	}
+
+	</script>
+</h1>
+</body>
+</html>

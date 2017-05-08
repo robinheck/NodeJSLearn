@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>
+			<p id="demo">
+				This is paragraph~
+			</p>
+		</h1>
+
+		<button type="button" onclick="MyFunc()">
+			MyFunc!!
+		</button><br>
+		<button type="button" onclick="MyFunc2()">
+			MyFunc2 !!
+		</button><br>
+		<button type="button" onclick="MyFunc3()">
+			MyFunc3 !!
+		</button><br>
+
+
+		<script type="text/javascript">
+			function MyFunc(){
+				alert ("你好");
+			}
+			function MyFunc2(){
+				var x;
+				x=confirm("True or False?")
+				document.getElementById('demo').innerHTML = x;
+			}
+			function MyFunc3(){
+				var x;
+				x = prompt('please key in some words \n(here is 2ed line) ','default');
+				document.getElementById('demo').innerHTML = x;
+			}			
+		</script>
+
+	</body>
+	
+	
+</html>

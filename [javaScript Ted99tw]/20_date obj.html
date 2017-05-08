@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body onload="runTimer()">
+<h1>
+<p id="demo">Display the result here.</p>
+</h1>
+<script>
+	function runTimer(){
+		var h,m,s, myday, result;
+		myday = new Date();
+		h=myday.getHours();
+		m=myday.getMinutes();
+		s=myday.getSeconds();
+		result=h + ":" + m + ":" + s;
+		document.getElementById('demo').innerHTML=result;
+		t= setTimeout("runTimer()",1000);
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var x, y=3;
+			switch(y)
+			{
+				case 3:
+					x="AAA";
+					break;
+				case 4:
+					x="BBB";
+					break;
+				default:
+					x="default";
+			}
+
+			// if (y==3)
+			// {
+			// 	x="AAA"
+			// }
+			// else if (y==4)
+			// {
+			// 	x="BBB";
+			// }
+			// else
+			// 	{x="CCC";}
+			function MyFunc(){
+				document.getElementById("demo").innerHTML=x;
+			}
+
+		</script>
+	</head>
+	<body>
+		<h1>
+			<p id="demo">
+				This is paragraph~
+			</p>
+		</h1>
+
+		<button type="button" onclick="MyFunc()">
+			pushme!!
+		</button>
+	</body>
+	
+
+</html>

@@ -1,0 +1,69 @@
+/*在設計網頁時,IE/Chrome/FireFox/Opera,各種瀏覽器都有不同的預設值
+為了避免做出來的東西在各種瀏覽器上有差異, 
+可以在一開始先load這個reset.css, 使每個瀏覽器在一開始都一樣
+以下內容是2011年寫出來的, 目前改變也不少
+自己在使用時發現有問題還是要去微調以下內容
+*/
+
+
+/*
+CSS Tools: Reset CSS
+目前最被廣泛使用的 CSS Reset 版本，由 Eric A. Meyer 所設計，支援 HTML5 語意標籤。
+
+HTML5 Reset Stylesheet | HTML5 Doctor 
+http://html5doctor.com/html-5-reset-stylesheet/
+這是 HTML5 Doctor 網站修改字 Eric A. Meyer 的版本。
+
+CSS Reset - YUI Library 
+https://yuilibrary.com/yui/docs/cssreset/
+由 Yahoo UI Library v3 所提供的 CSS Reset 版本。
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

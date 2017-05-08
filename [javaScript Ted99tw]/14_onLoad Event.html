@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+
+</head>
+<body onload="myFunc(1)" onunload="myFunc(2)" >   
+<!-- unload 這個指令有問題 -->
+<h1>
+	<p>This is a paragraph</p>
+	<script type="text/javascript">
+		function myFunc(x){
+			if (x==1){
+				alert("loading...");
+			}else
+			{
+				alert("unloading...");
+			}
+		}
+	</script>
+</h1>
+</body>
+</html>
