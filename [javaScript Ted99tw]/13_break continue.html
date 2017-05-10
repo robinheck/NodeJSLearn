@@ -1,0 +1,40 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>
+			<p id="demo">
+				This is paragraph~
+			</p>
+		</h1>
+
+		<button type="button" onclick="MyFunc1()">
+			MyFunc1!!
+		</button><br>
+
+		<script type="text/javascript">
+			function MyFunc1()
+			{
+				var x=0, y=0, z=0;
+				var str=""
+				for (i=0;i<=100;i++){
+					x+=i;
+				}
+				for (i=0;i<=100;i++){
+					y+=i;
+					if (i==11) break;
+				}
+				for (i=0;i<=100;i++){
+					if (i==50) continue;
+					z+=i;
+				}		
+				str= "function 1 = " + x + "<br>" +"function 2 = " + y + "<br>"	+"function 3 = " + z + "<br>"						
+				document.getElementById('demo').innerHTML = str;
+			}
+	
+		</script>
+
+	</body>
+	
+	
+</html>

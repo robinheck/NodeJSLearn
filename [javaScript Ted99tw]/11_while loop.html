@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>
+			<p id="demo">
+				This is paragraph~
+			</p>
+		</h1>
+
+		<button type="button" onclick="MyFunc1()">
+			MyFunc1!!
+		</button><br>
+		<button type="button" onclick="MyFunc2()">
+			MyFunc2!!
+		</button><br>		
+
+		<script type="text/javascript">
+			function MyFunc1(){
+				var x=0,i=0;
+				while (i<=15){
+					x += i ;
+					i ++ ;
+					document.getElementById('demo').innerHTML = x;	
+				}
+			}
+			function MyFunc2(){
+				var x=0 ,i=0 ;
+				do{
+					x+=i;
+					i++;
+					document.getElementById('demo').innerHTML = x;
+				}while(i<=11)
+			}			
+		
+		</script>
+
+	</body>
+	
+	
+</html>

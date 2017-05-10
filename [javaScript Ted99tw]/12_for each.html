@@ -1,0 +1,39 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>
+			<p id="demo">
+				This is paragraph~
+			</p>
+		</h1>
+
+		<button type="button" onclick="MyFunc1()">
+			MyFunc1!!
+		</button><br>
+
+		<script type="text/javascript">
+			function MyFunc1()
+			{
+				var str="" ;
+				
+				var myObj = {name:"Zero" , title:"Mr." , age:"99" };
+				for each (var y in myObj) 
+				{
+					str = str + y;
+				}
+				
+				document.getElementById('demo').innerHTML= str ;
+			}
+			// 一般的for / while, 是你知道有多少迴圈要跑的時候
+			// 但如果不知道要跑多少圈, for each 就很好用	
+
+			//for each,, 是老寫法,, 目前已不support, 這個程式run不出來
+	
+		
+		</script>
+
+	</body>
+	
+	
+</html>

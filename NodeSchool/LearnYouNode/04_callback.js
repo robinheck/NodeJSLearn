@@ -4,9 +4,9 @@ In Node Application,
 any async function accepts a callback as the last parameter and 
 a callback function accepts an error as the first parameter.
 
+https://github.com/maxogden/art-of-node#callbacks
 */
 
-/*
 ==Callbacks==
 
 This is the most important topic to understand if you want to understand how to use node. 

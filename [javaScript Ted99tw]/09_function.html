@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>
+			<p id="demo">
+				This is paragraph~
+			</p>
+		</h1>
+
+		<button type="button" onclick="MyFunc1()">
+			MyFunc1!!
+		</button><br>
+		<button type="button" onclick="MyFunc2(3,4)">
+			MyFunc2 !!
+		</button><br>
+
+		<script type="text/javascript">
+			function MyFunc1(){
+				var x;
+				x= MyFunc3(3,4) 
+				document.getElementById('demo').innerHTML = x;
+			}
+			function MyFunc2(var1,var2){
+				var x;
+				x= var1 + var2 ;
+				document.getElementById('demo').innerHTML = x;
+			}
+			function MyFunc3(var1,var2){
+				return var1*var2;
+				//注意這個傳回值
+			}			
+		</script>
+
+	</body>
+	
+	
+</html>
