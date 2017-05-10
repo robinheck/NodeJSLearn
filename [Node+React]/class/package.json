@@ -1,0 +1,39 @@
+{
+  "name": "class",
+  "version": "1.0.0",
+  "description": "class",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-styles": "^3.0.0",
+    "babel-core": "^6.22.1",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.1.0",
+    "koa-static": "^2.0.0",
+    "mysql": "^2.13.0",
+    "node-telegram-bot-api": "^0.26.0",
+    "pm2": "^2.3.0",
+    "redis": "^2.6.5",
+    "socket.io": "^1.7.2",
+    "test": "^0.6.0",
+    "translator": "^1.9.1",
+    "ws": "^1.1.1"
+  },
+  "scripts": {
+    "start": "node ./01.module.export/test1.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "port": "8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "eslint": "^3.14.1",
+    "eslint-plugin-react": "^6.9.0",
+    "prore": "^1.1.0"
+  }
+}
